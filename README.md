@@ -3,8 +3,8 @@
 
 ## Grupo
 
-Identifique aqui o número mecanográfico e o nome completo de todos
-os membros do grupo.
+Matias Lessa Vaz - 201900194
+João Vitor Torres Tedesco - 202000416
 
 ## Tarefas realizadas
 
