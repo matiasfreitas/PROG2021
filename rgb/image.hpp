@@ -12,6 +12,7 @@ namespace rgb {
         color **pixels;
     public:
         image(int w, int h, const color& fill = color::WHITE);
+        image(const image& toCopy);
         ~image();
         int width() const;
         int height() const;
@@ -27,6 +28,7 @@ namespace rgb {
         void rotate_right();
         void add(const image& img, const color& neutral,
                  int x, int y);
+        image &operator=(const image &imageToCopy);
     };
 }
 

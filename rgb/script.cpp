@@ -59,27 +59,35 @@ namespace rgb {
             else if(command == "to_gray_scale"){
                 img->to_gray_scale();
             }
-//            else if(command == "replace"){
-//                img->replace();
-//            }
-//            else if(command == "fill"){
-//                img->fill();
-//            }
-//            else if(command == "crop"){
-//                img->crop();
-//            }
-//            else if(command == "rotate_left"){
-//                img->rotate_left();
-//            }
-//            else if(command == "rotate_right"){
-//                img->rotate_right();
-//            }
-//            else if(command == "mix"){
-//                img->rotate_right();
-//            }
-//            else if(command == "add"){
-//                img->rotate_right();
-//            }
+           else if(command == "replace"){
+               int  r1, g1, b1, r2, g2, b2;
+               input >> r1 >> g1 >> b1 >> r2 >> g2 >> b2;
+               img->replace(color(r1, g1, b1), color(r2, g2, b2));
+
+           }
+            else if(command == "crop"){
+                int x, y, w, h;
+                input >> x >> y >> w >> h;
+                img->crop(x, y, w, h);
+            }
+            else if(command == "rotate_left"){
+                img->rotate_left();
+            }
+            else if(command == "rotate_right"){
+                img->rotate_right();
+            }
+            else if(command == "mix"){
+                std::string filename;
+                int f;
+                input >> filename >> f;
+                img->mix(*png::load(root_path + "/" + filename), f);
+            }
+            else if(command == "add"){
+                std::string filename;
+                int r, g, b, x, y;
+                input >> filename >> r >> g >> b >> x >> y;
+                img->add(*png::load(root_path + "/" + filename), color(r,g,b), x, y);
+            }
         }
     }
     void script::open() {

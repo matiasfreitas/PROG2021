@@ -52,7 +52,7 @@ namespace rgb {
         this->b = (((100-f)*this->b)+ (c.b*f))/100;
     }
     void color::to_gray_scale() {
-        int v = this->r/3 + this->g/3 + this->b/3;
+        int v = int(this->r/3.0 + this->g/3.0 + this->b/3.0);
         this->r = v;
         this->g = v;
         this->b = v;
