@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matiasfg/Documents/progp1
+# Install script for directory: /mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,23 +27,23 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/rgb" TYPE DIRECTORY FILES "/Users/matiasfg/Documents/progp1/rgb")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/rgb" TYPE DIRECTORY FILES "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/rgb")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/matiasfg/Documents/progp1/cmake-build-debug/external/gtest/cmake_install.cmake")
+  include("/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/cmake-build-debug/external/gtest/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/matiasfg/Documents/progp1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

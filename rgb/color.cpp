@@ -34,9 +34,9 @@ namespace rgb {
         return b;
     }
     color& color::operator=(const color& c) {
-        this->r = c.r;
-        this->g = c.g;
-        this->b = c.b;
+        this->r = c.red();
+        this->g = c.green();
+        this->b = c.blue();
         return *this;
     }
 
@@ -47,22 +47,19 @@ namespace rgb {
 
     }
     void color::mix(const color& c, int f) {
-        this->r = (((100-f)*this->r)+ (c.r*f))/100;
-        this->g = (((100-f)*this->g)+ (c.g*f))/100;
-        this->b = (((100-f)*this->b)+ (c.b*f))/100;
+        this->r = (((100-f)*this->r)+ (c.red()*f))/100;
+        this->g = (((100-f)*this->g)+ (c.green()*f))/100;
+        this->b = (((100-f)*this->b)+ (c.blue()*f))/100;
     }
     void color::to_gray_scale() {
-        int v = int(this->r/3.0 + this->g/3.0 + this->b/3.0);
-        this->r = v;
-        this->g = v;
-        this->b = v;
-
+        int gray = int(this->r + this->g + this->b)/3.0;
+        this->r = gray;
+        this->g = gray;
+        this->b = gray;
     }
 
     bool color::operator==(const color &rhs) const {
-        return r == rhs.r &&
-               g == rhs.g &&
-               b == rhs.b;
+        return r == rhs.red() && g == rhs.green() && b == rhs.blue();
     }
 
     bool color::operator!=(const color &rhs) const {

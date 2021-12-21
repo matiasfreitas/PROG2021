@@ -12,9 +12,7 @@ namespace rgb {
     }
 
     image::~image() {
-        for (int i = 0; i < iwidth; ++i) {
-            delete pixels[i];
-        }
+        for (int i = 0; i < iwidth; ++i) delete pixels[i];
         delete pixels;
     }
     int image::width() const {
@@ -30,49 +28,44 @@ namespace rgb {
         return pixels[x][y];
     }
     void image::invert() {
-        for (int i = 0; i < iwidth; ++i) {
-            for (int j = 0; j < iheight; ++j) {
-                pixels[i][j].invert();
+        for (int i = 0; i < width(); ++i) {
+            for (int j = 0; j < height(); ++j) {
+                at(i,j).invert();
             }
         }
     }
     void image::to_gray_scale() {
-        for (int i = 0; i < iwidth; ++i) {
-            for (int j = 0; j < iheight; ++j) {
-                pixels[i][j].to_gray_scale();
+        for (int i = 0; i < width(); ++i) {
+            for (int j = 0; j < height(); ++j) {
+                at(i,j).to_gray_scale();
             }
         }
     }
     void image::fill(int x, int y, int w, int h, const color& c) {
         int widthlSize = x +w, heightlSize = y +h ;
-        if(widthlSize>iwidth){
-            widthlSize= iwidth;
+        if(widthlSize > width()){
+            widthlSize= width();
         }
-        if(heightlSize >iheight){
-            heightlSize = iheight;
+        if(heightlSize > height()){
+            heightlSize = height();
         }
         for (int i = x; i < widthlSize; ++i) {
             for (int j = y; j < heightlSize; ++j) {
-                    pixels[i][j] = c;
+                    at(i,j) = c;
             }
         }
     }
     void image::replace(const color& a, const color& b) {
-        for (int i = 0; i < iwidth; ++i) {
-            for (int j = 0; j < iheight; ++j) {
-                if (pixels[i][j] == a){
-                    pixels[i][j] = b;
-                }
+        for (int i = 0; i < width(); ++i) {
+            for (int j = 0; j < height(); ++j) {
+                if (at(i, j) == a) at(i, j) = b;
             }
         }
     }
-    void image::add(const image& img, const color& neutral,
-                    int x, int y) {
+    void image::add(const image& img, const color& neutral, int x, int y) {
         for (int i = 0; i < img.width(); ++i) {
             for (int j = 0; j < img.height(); ++j) {
-                if (img.pixels[i][j] != neutral){
-                    pixels[i+x][j+y] = img.pixels[i][j];
-                }
+                if (img.at(i, j) != neutral) at(i+x, j+y) = img.at(i, j);
             }
         }
 
@@ -80,40 +73,40 @@ namespace rgb {
     void image::crop(int x, int y, int w, int h) {
         image pixelsTemp(w, h, color(0,0,0));
         for (int i = 0; i < w; ++i) {
-            pixelsTemp.pixels[i]  = new color[h];
             for (int j = 0; j < h; ++j) {
-                pixelsTemp.pixels[i][j] = this->pixels[i+x][j+y];
+                pixelsTemp.at(i, j) = at(i+x, j+y);
             }
         }
         *this = pixelsTemp;
     }
     void image::rotate_left() {
-        image pixelsTemp(this->height(), this->iwidth, color(0,0,0));
+        image pixelsTemp(height(), width(), color::BLACK);
         for(int i=0; i<this->iheight; i++){
             for(int j=0; j<this->iwidth; j++){
-                pixelsTemp.pixels[i][j]=this->pixels[this->iwidth-j-1][i];
+                pixelsTemp.at(i, j)=at(width()-j-1, i);
             }
         }
         *this = pixelsTemp;
     }
     void image::rotate_right() {
-        image pixelsTemp(this->height(), this->iwidth, color(0,0,0));
-        for(int i=0; i<this->iheight; i++){
-            for(int j=0; j<this->iwidth; j++){
-                pixelsTemp.pixels[i][j]=this->pixels[j][this->iheight-i-1];
+        image pixelsTemp(height(), width(), color::BLACK);
+        for(int i=0; i<height(); i++){
+            for(int j=0; j<this->width(); j++){
+                pixelsTemp.at(i, j)=at(j, height()-i-1);
             }
         }
         *this = pixelsTemp;
     }
     void image::mix(const image& img, int factor) {
-        for (int i = 0; i < iwidth; ++i) {
-            for (int j = 0; j < iheight; ++j) {
-                this->pixels[i][j].mix(img.pixels[i][j], factor);
+        for (int i = 0; i < width(); ++i) {
+            for (int j = 0; j < height(); ++j) {
+                at(i, j).mix(img.at(i, j), factor);
             }
         }
     }
+
     image &image::operator=(const image &imageToCopy) {
-        for (int i = 0; i < iwidth; ++i) {
+        for (int i = 0; i < width(); ++i) {
             delete pixels[i];
         }
         delete pixels;
@@ -121,7 +114,7 @@ namespace rgb {
         for (int i = 0; i < imageToCopy.width(); ++i) {
             this->pixels[i]  = new color[imageToCopy.height()];
             for (int j = 0; j < imageToCopy.height(); ++j) {
-                this->pixels[i][j] = imageToCopy.pixels[i][j];
+                at(i, j) = imageToCopy.at(i, j);
             }
         }
         this->iwidth = imageToCopy.width();
