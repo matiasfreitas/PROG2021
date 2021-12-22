@@ -55,7 +55,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/data\"' -g  "
+					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/home/matiasfg/Documents/PROG2021/data\"' -g"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -65,18 +65,26 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/stb"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/stb"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/gtest/googletest/include"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/gtest/googletest/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/."
+					"path" : "/home/matiasfg/Documents/PROG2021/."
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0,

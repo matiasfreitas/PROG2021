@@ -20,13 +20,12 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
+						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				{
@@ -54,8 +53,8 @@
 					"source" : "external/gtest/googletest",
 					"targetIndexes" : 
 					[
-						2,
-						3
+						1,
+						2
 					]
 				}
 			],
@@ -75,13 +74,12 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
+						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				{
@@ -105,8 +103,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2,
-						3
+						1,
+						2
 					]
 				}
 			],
@@ -115,70 +113,63 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "color_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-color_test-Debug-f64f4c7c1ec6b273fc51.json",
+					"jsonFile" : "target-color_test-Debug-9190d570464bce7dd550.json",
 					"name" : "color_test",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "docs::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-docs-Debug-9d5f8d4359014f0c3530.json",
-					"name" : "docs",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gtest::@b6daf43c893e1843d14a",
-					"jsonFile" : "target-gtest-Debug-d142b651996189e29171.json",
+					"jsonFile" : "target-gtest-Debug-ddbaff599024cb521b35.json",
 					"name" : "gtest",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gtest_main::@b6daf43c893e1843d14a",
-					"jsonFile" : "target-gtest_main-Debug-fe9d4b08a7aa884b1588.json",
+					"jsonFile" : "target-gtest_main-Debug-a6bf5f50f31f2e8f6378.json",
 					"name" : "gtest_main",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "image_diff::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-image_diff-Debug-d0b5162f2a2f3c78dd6f.json",
+					"jsonFile" : "target-image_diff-Debug-4191508749e6ef1f408c.json",
 					"name" : "image_diff",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "image_dump::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-image_dump-Debug-08548eeabc684b53f026.json",
+					"jsonFile" : "target-image_dump-Debug-5c2ec0dc5c4fac6478a5.json",
 					"name" : "image_dump",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "image_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-image_test-Debug-44505b8e82aca590ba8c.json",
+					"jsonFile" : "target-image_test-Debug-43714fe4ddd9877a1f35.json",
 					"name" : "image_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "rgb::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-rgb-Debug-197a414c1db02cacea45.json",
+					"jsonFile" : "target-rgb-Debug-d18ea9183f99cd4b0897.json",
 					"name" : "rgb",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "run_script::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-run_script-Debug-6547a79db26dfef53e8a.json",
+					"jsonFile" : "target-run_script-Debug-319b1735f92613b84bbb.json",
 					"name" : "run_script",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "script_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-script_test-Debug-65e2f9923c440809eeea.json",
+					"jsonFile" : "target-script_test-Debug-d7f99d56ac7145375e69.json",
 					"name" : "script_test",
 					"projectIndex" : 0
 				}
@@ -188,12 +179,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/cmake-build-debug",
-		"source" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021"
+		"build" : "/home/matiasfg/Documents/PROG2021/cmake-build-debug",
+		"source" : "/home/matiasfg/Documents/PROG2021"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 0
+		"minor" : 2
 	}
 }

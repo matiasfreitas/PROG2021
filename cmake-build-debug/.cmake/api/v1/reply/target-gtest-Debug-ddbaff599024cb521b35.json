@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_maind.a"
+			"path" : "lib/libgtestd.a"
 		}
 	],
 	"backtrace" : 3,
@@ -14,8 +14,8 @@
 			"add_library",
 			"cxx_library_with_type",
 			"cxx_library",
-			"target_link_libraries",
-			"include_directories"
+			"include_directories",
+			"target_compile_features"
 		],
 		"files" : 
 		[
@@ -31,7 +31,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 128,
+				"line" : 126,
 				"parent" : 0
 			},
 			{
@@ -47,25 +47,25 @@
 				"parent" : 2
 			},
 			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 141,
-				"parent" : 0
-			},
-			{
 				"file" : 2
 			},
 			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 2,
 				"line" : 10,
-				"parent" : 5
+				"parent" : 4
 			},
 			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 1,
 				"line" : 116,
 				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 2
 			}
 		]
 	},
@@ -75,7 +75,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/data\"' -g  "
+					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/home/matiasfg/Documents/PROG2021/data\"' -g"
 				},
 				{
 					"fragment" : "-Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
@@ -87,37 +87,36 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 5,
+					"path" : "/home/matiasfg/Documents/PROG2021/external/stb"
+				},
+				{
 					"backtrace" : 6,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/stb"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/gtest/googletest/include"
 				},
 				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/gtest/googletest/include"
-				},
-				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/gtest/googletest"
+					"backtrace" : 6,
+					"path" : "/home/matiasfg/Documents/PROG2021/external/gtest/googletest"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					7
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 4,
-			"id" : "gtest::@b6daf43c893e1843d14a"
-		}
-	],
-	"id" : "gtest_main::@b6daf43c893e1843d14a",
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_maind.a",
+	"id" : "gtest::@b6daf43c893e1843d14a",
+	"name" : "gtest",
+	"nameOnDisk" : "libgtestd.a",
 	"paths" : 
 	{
 		"build" : "external/gtest/googletest",
@@ -138,7 +137,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "external/gtest/googletest/src/gtest_main.cc",
+			"path" : "external/gtest/googletest/src/gtest-all.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -61,7 +61,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/data\"' -g  "
+					"fragment" : " -Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/home/matiasfg/Documents/PROG2021/data\"' -g"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -71,24 +71,32 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/stb"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/stb"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/."
+					"path" : "/home/matiasfg/Documents/PROG2021/."
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/gtest/googletest/include"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/gtest/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/external/gtest/googletest"
+					"path" : "/home/matiasfg/Documents/PROG2021/external/gtest/googletest"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0
@@ -99,7 +107,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "rgb::@6890427a1f51a3e7e1df"
+			"id" : "gtest::@b6daf43c893e1843d14a"
 		},
 		{
 			"backtrace" : 2,
@@ -107,7 +115,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@b6daf43c893e1843d14a"
+			"id" : "rgb::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "color_test::@6890427a1f51a3e7e1df",
@@ -116,7 +124,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/data\"' -g",
+				"fragment" : "-Wall -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -DROOT_PROJ_DIR='\"/home/matiasfg/Documents/PROG2021/data\"' -g",
 				"role" : "flags"
 			},
 			{
@@ -139,6 +147,7 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 2,
 				"fragment" : "-lpthread",
 				"role" : "libraries"
 			},

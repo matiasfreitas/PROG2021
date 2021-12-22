@@ -1,10 +1,14 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/programs/run_script.cpp" "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/cmake-build-debug/CMakeFiles/run_script.dir/programs/run_script.cpp.o"
+  "/home/matiasfg/Documents/PROG2021/programs/run_script.cpp" "/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/run_script.dir/programs/run_script.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,9 +19,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../."
   )
 
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  )
+
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/f/OneDrive - Universidade do Porto/Cadeiras/2 ano/PROG/Projeto/PROG2021/cmake-build-debug/CMakeFiles/rgb.dir/DependInfo.cmake"
+  "/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/rgb.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

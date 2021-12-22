@@ -12,8 +12,8 @@ namespace rgb {
     }
 
     image::~image() {
-        for (int i = 0; i < iwidth; ++i) delete pixels[i];
-        delete pixels;
+        for (int i = 0; i < iwidth; ++i) delete[] pixels[i];
+        delete[] pixels;
     }
     int image::width() const {
         return iwidth;
@@ -107,9 +107,9 @@ namespace rgb {
 
     image &image::operator=(const image &imageToCopy) {
         for (int i = 0; i < width(); ++i) {
-            delete pixels[i];
+            delete[] pixels[i];
         }
-        delete pixels;
+        delete[] pixels;
         pixels = new color*[imageToCopy.width()];
         for (int i = 0; i < imageToCopy.width(); ++i) {
             this->pixels[i]  = new color[imageToCopy.height()];
