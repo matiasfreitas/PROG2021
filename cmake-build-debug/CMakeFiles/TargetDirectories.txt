@@ -3,9 +3,10 @@
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/list_install_components.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/color_test.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/color_test.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/script_test.dir
+/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/docs.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/package.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/image_test.dir
 /home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeFiles/run_script.dir

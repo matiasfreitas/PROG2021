@@ -5,7 +5,7 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\gtest\;CMake Files\external\gtest\googletest\;CMake Files\external\gtest\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\gtest\;CMake Files\external\gtest\googletest\;CMake Files\external\gtest\googletest\cmake\;CMake Files\cmake-build-debug\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/matiasfg/Documents/PROG2021/cmake-build-debug/external/gtest"/>
@@ -135,6 +135,12 @@
 		</Unit>
 		<Unit filename="/home/matiasfg/Documents/PROG2021/external/gtest/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\external\gtest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeDoxyfile.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/matiasfg/Documents/PROG2021/cmake-build-debug/CMakeDoxygenDefaults.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
