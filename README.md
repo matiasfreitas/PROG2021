@@ -2,12 +2,19 @@
 # Trabalho de programação
 
 ## Grupo
-
-Matias Lessa Vaz - 201900194
-João Vitor Torres Tedesco - 202000416
+| Name | Mechanographic number |
+|------|-----------------------|
+| Matias Lessa Vaz | 201900194 |
+| João Vitor Torres Tedesco | 202000416 |
 
 ## Tarefas realizadas
 
-Indique aqui as tarefas que conseguiu realizar e quais não. 
-
-
+| Task            | Finished | 
+|-----------------|-----------|
+| “Header” para classe rgb::color (tarefa: documentar com anotações Doxygen). |<ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| Implementação da classe rgb::color (tarefa: completar o código). |<ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| “Header” para classe rgb::image (tarefa: documentar com anotações Doxygen) |<ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| Implementação da classe rgb::image (tarefa: completar o código). | <ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| “Header” para classe rgb::script (tarefa: documentar com anotações Doxygen). |<ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| Implementação da classe rgb::script (tarefa: completar o código). | <ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+| Testes unitários (usando GoogleTest). | <ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
