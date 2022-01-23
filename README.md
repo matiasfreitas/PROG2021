@@ -18,3 +18,5 @@
 | “Header” para classe rgb::script (tarefa: documentar com anotações Doxygen). |<ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
 | Implementação da classe rgb::script (tarefa: completar o código). | <ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
 | Testes unitários (usando GoogleTest). | <ul><li>- [x] Yes</li><li>- [ ] No</li></ul>
+
+FEUP 2021/2022 Projeto 1 de Prog
